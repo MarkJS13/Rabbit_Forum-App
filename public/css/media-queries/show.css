@@ -1,0 +1,801 @@
+@media screen and (max-width: 1160px) {
+    
+
+    .container {
+        grid-template-columns: .5fr 7.8fr .5fr;
+        gap: 30px;
+        padding: 20px 0;
+
+      }
+
+      
+      .sidebarL .logo h1 {
+        font-size: 30px;
+        padding: 0 25px 8px 25px;
+      }
+      
+      .sidebarL ul {
+        padding: 30px 30px 30px 10px;
+      }
+      
+      .sidebarL ul li {
+        gap: 14px;
+        cursor: pointer;
+        font-size: 12px;
+      }
+      
+      .sidebarL ul li span{
+        font-size: 14px;
+      }
+
+
+      /* main  */
+    
+      
+      
+      #question-show {
+        padding: 30px;
+        padding-top: 20px;
+      }
+      
+      #question-show .title-question {
+        padding-bottom: 18px;
+      
+      }
+      
+      #question-show .title-question .close {
+        font-size: 27px;
+        padding: 20px;
+        padding-top: 15px;
+      }
+      
+      #question-show .title-question h1{
+        font-size: 22px;
+        padding-bottom: 7px;
+      }
+      
+      #question-show .title-question h1 span{
+        font-size: 9px;
+      }
+      
+      #question-show .title-question h4 {
+        font-size: 10px;
+      }
+      
+      #question-show  .main-question {
+        padding-bottom: 20px;
+        gap: 5px;
+      }
+      
+      #question-show  .main-question h3 {
+        font-size: 13px;
+      }
+    
+      .posted-by h4 {
+        font-size: 10px;
+      }
+      
+      .comment-form {
+        padding: 30px 0;
+      }
+      .comment-form p {
+        font-size: 10px;
+        padding-bottom: 8px;
+      }
+          
+      .comment-form form textarea{
+        font-size: 13px;
+      }
+      
+      .comment-form form button {
+        padding: 7px 17px;
+        font-size: 12px;
+      }
+      
+      .comments .commenter-section .click-reply{
+        font-size: 13px;
+      }
+    
+      .comments .commenter-section h1{
+        font-size: 14px;
+        color: var(--light-blue);
+      }
+      
+      .comments .commenter-section p{
+        font-size: 12px;
+      }
+      
+      
+      .reply-form form textarea{
+        height: 70px;
+        font-size: 14px;
+      }
+      
+      .reply-form form button {
+        padding: 7px 17px;
+        font-size: 12px;
+      }
+
+
+      /* sidebar right */
+
+      .sidebarR {
+        gap: 30px;
+      }
+      
+      .sidebarR .profile-details{
+        background-color: var(--light-blue-grayish);
+        padding: 18px 25px;
+      }
+      
+      .sidebarR .profile-details h1{ 
+        font-size: 15px;
+       
+      }
+      
+      .sidebarR .profile-details h2{ 
+        font-size: 50px;
+      }
+      
+      .sidebarR .profile-details p {
+        font-size: 10px;
+      }
+      
+      .sidebarR .profile-details h5 {
+        font-size: 8px;
+      }
+      
+      
+      .sidebarR .trends  {
+        padding: 25px 18px;
+      }
+      
+      
+      .trending-title h1 {
+        font-size: 13px;
+      }
+      
+      
+      .trending-list li {
+        font-size: 12px;
+      }
+      
+      footer {
+        gap: 8px;
+        font-size: 9px;
+      }
+}
+
+@media screen and (max-width: 970px) {
+    .container {
+        grid-template-columns: 150px 1fr 190px;
+        gap: 20px;
+      }
+      
+      .sidebarL .logo h1 {
+        font-size: 25px;
+      }
+      
+      .sidebarL ul {
+        padding: 20px 20px 20px 10px;
+        gap: 35px;
+      }
+      
+      .sidebarL ul li {
+        gap: 8px;
+        font-size: 10px;
+      }
+      
+      .sidebarL ul li span{
+        font-size: 10px;
+      }
+      /* main  */
+    
+       
+      #question-show {
+        padding: 30px;
+        padding-top: 20px;
+      }
+      
+      #question-show .title-question {
+        padding-bottom: 18px;
+      
+      }
+      
+      #question-show .title-question .close {
+        font-size: 27px;
+        padding: 20px;
+        padding-top: 15px;
+      }
+      
+      #question-show .title-question h1{
+        font-size: 22px;
+        padding-bottom: 7px;
+      }
+      
+      #question-show .title-question h1 span{
+        font-size: 9px;
+      }
+      
+      #question-show .title-question h4 {
+        font-size: 10px;
+      }
+      
+      #question-show  .main-question {
+        padding-bottom: 20px;
+        gap: 5px;
+      }
+      
+      #question-show  .main-question h3 {
+        font-size: 13px;
+      }
+    
+      .comments-count p{
+        font-size: 10px;
+      }
+      
+      .comment-form {
+        padding: 30px 0;
+      }
+      .comment-form p {
+        font-size: 10px;
+        padding-bottom: 8px;
+      }
+          
+      .comment-form form textarea{
+        font-size: 13px;
+      }
+      
+      .comment-form form button {
+        padding: 7px 17px;
+        font-size: 12px;
+      }
+      
+      .comments .commenter-section .click-reply{
+        font-size: 13px;
+      }
+    
+      .comments .commenter-section h1{
+        font-size: 14px;
+        color: var(--light-blue);
+      }
+      
+      .comments .commenter-section p{
+        font-size: 12px;
+      }
+      
+      
+      .reply-form form textarea{
+        height: 70px;
+        font-size: 14px;
+      }
+      
+      .reply-form form button {
+        padding: 7px 17px;
+        font-size: 12px;
+      }
+
+
+      /* sidebar right */
+
+      .sidebarR {
+        gap: 25px;
+      }
+      
+      .sidebarR .profile-details{
+        background-color: var(--light-blue-grayish);
+        padding: 16px 18px;
+
+      }
+      
+      .sidebarR .profile-details h1{ 
+        font-size: 10px;
+      }
+      
+      .sidebarR .profile-details h2{ 
+        font-size: 40px;
+        padding-bottom: 7px;
+      }
+      
+      .sidebarR .profile-details p {
+        font-size: 7px;
+      }
+      
+      .sidebarR .profile-details h5 {
+        font-size: 7px;
+      }
+      
+      
+      .sidebarR .trends  {
+        padding: 25px 16px;
+      }
+      
+      
+      .trending-title h1 {
+        font-size: 11px;
+      }
+      
+      
+      .trending-list li {
+        font-size: 10px;
+      }
+      
+      footer {
+        gap: 5px;
+        font-size: 8px;
+      }
+}
+
+@media screen and (max-width: 970px) {
+    .container {
+        grid-template-columns: 150px 1fr 190px;
+        gap: 20px;
+      }
+      
+      .sidebarL .logo h1 {
+        font-size: 25px;
+      }
+      
+      .sidebarL ul {
+        padding: 20px 20px 20px 10px;
+        gap: 35px;
+      }
+      
+      .sidebarL ul li {
+        gap: 8px;
+        font-size: 10px;
+      }
+      
+      .sidebarL ul li span{
+        font-size: 10px;
+      }
+      /* main  */
+    
+       
+      #question-show {
+        padding: 30px;
+        padding-top: 20px;
+      }
+      
+      #question-show .title-question {
+        padding-bottom: 18px;
+      
+      }
+      
+      #question-show .title-question .close {
+        font-size: 27px;
+        padding: 20px;
+        padding-top: 15px;
+      }
+      
+      #question-show .title-question h1{
+        font-size: 22px;
+        padding-bottom: 7px;
+      }
+      
+      #question-show .title-question h1 span{
+        font-size: 9px;
+      }
+      
+      #question-show .title-question h4 {
+        font-size: 10px;
+      }
+      
+      #question-show  .main-question {
+        padding-bottom: 20px;
+        gap: 5px;
+      }
+      
+      #question-show  .main-question h3 {
+        font-size: 13px;
+      }
+    
+      .comments-count p{
+        font-size: 10px;
+      }
+      
+      .comment-form {
+        padding: 30px 0;
+      }
+      .comment-form p {
+        font-size: 10px;
+        padding-bottom: 8px;
+      }
+          
+      .comment-form form textarea{
+        font-size: 13px;
+      }
+      
+      .comment-form form button {
+        padding: 7px 17px;
+        font-size: 12px;
+      }
+      
+      .comments .commenter-section .click-reply{
+        font-size: 13px;
+      }
+    
+      .comments .commenter-section h1{
+        font-size: 14px;
+        color: var(--light-blue);
+      }
+      
+      .comments .commenter-section p{
+        font-size: 12px;
+      }
+      
+      
+      .reply-form form textarea{
+        height: 70px;
+        font-size: 14px;
+      }
+      
+      .reply-form form button {
+        padding: 7px 17px;
+        font-size: 12px;
+      }
+
+
+      /* sidebar right */
+
+      .sidebarR {
+        gap: 25px;
+      }
+      
+      .sidebarR .profile-details{
+        background-color: var(--light-blue-grayish);
+        padding: 16px 18px;
+
+      }
+      
+      .sidebarR .profile-details h1{ 
+        font-size: 10px;
+      }
+      
+      .sidebarR .profile-details h2{ 
+        font-size: 40px;
+        padding-bottom: 7px;
+      }
+      
+      .sidebarR .profile-details p {
+        font-size: 7px;
+      }
+      
+      .sidebarR .profile-details h5 {
+        font-size: 7px;
+      }
+      
+      
+      .sidebarR .trends  {
+        padding: 25px 16px;
+      }
+      
+      
+      .trending-title h1 {
+        font-size: 11px;
+      }
+      
+      
+      .trending-list li {
+        font-size: 10px;
+      }
+      
+      footer {
+        gap: 5px;
+        font-size: 8px;
+      }
+}
+
+@media screen and (max-width: 857px) {
+    .container {
+        grid-template-columns: 150px 1fr 190px;
+        gap: 20px;
+      }
+      
+      .sidebarL .logo h1 {
+        font-size: 25px;
+      }
+      
+      .sidebarL ul {
+        padding: 20px 20px 20px 10px;
+        gap: 35px;
+      }
+      
+      .sidebarL ul li {
+        gap: 8px;
+        font-size: 10px;
+      }
+      
+      .sidebarL ul li span{
+        font-size: 10px;
+      }
+      /* main  */
+    
+      
+      #question-show .title-question .close {
+        font-size: 24px;
+        padding-top: 18px;
+      }
+      
+      #question-show .title-question h1{
+        font-size: 20px;
+      }
+      
+      #question-show .title-question h1 span{
+        font-size: 9px;
+      }
+      
+      #question-show .title-question h4 {
+        font-size: 9px;
+      }
+      
+      #question-show  .main-question {
+        padding-bottom: 10px;
+        gap: 4px;
+      }
+      
+      #question-show  .main-question h3 {
+        font-size: 11px;
+      }
+    
+      .comments-count p{
+        font-size: 9px;
+      }
+      
+      .comment-form p {
+        font-size: 10px;
+      }
+          
+      .comment-form form textarea{
+        font-size: 12px;
+        height: 80px;
+      }
+      
+      .comment-form form button {
+        padding: 6px 16px;
+        font-size: 10px;
+      }
+      
+      .comments .commenter-section .click-reply{
+        font-size: 10px;
+      }
+    
+      .comments .commenter-section h1{
+        font-size: 13px;
+      }
+      
+      .comments .commenter-section p{
+        font-size: 10px;
+      }
+      
+      
+      .reply-form form textarea{
+        height: 70px;
+        font-size: 13px;
+      }
+      
+      .reply-form form button {
+        padding: 6px 16px;
+        font-size: 10px;
+      }
+      
+      .comments .reply-section .replies h1 {
+        font-size: 13px;
+      }
+      
+      .comments .reply-section .replies p{
+        font-size: 10px;
+      }
+    
+
+
+      /* sidebar right */
+
+      .sidebarR {
+        gap: 25px;
+      }
+      
+      .sidebarR .profile-details{
+        background-color: var(--light-blue-grayish);
+        padding: 16px 18px;
+
+      }
+      
+      .sidebarR .profile-details h1{ 
+        font-size: 10px;
+      }
+      
+      .sidebarR .profile-details h2{ 
+        font-size: 40px;
+        padding-bottom: 7px;
+      }
+      
+      .sidebarR .profile-details p {
+        font-size: 7px;
+      }
+      
+      .sidebarR .profile-details h5 {
+        font-size: 7px;
+      }
+      
+      
+      .sidebarR .trends  {
+        padding: 25px 16px;
+      }
+      
+      
+      .trending-title h1 {
+        font-size: 11px;
+      }
+      
+      
+      .trending-list li {
+        font-size: 10px;
+      }
+      
+      footer {
+        gap: 5px;
+        font-size: 8px;
+      }
+}
+
+@media screen and (max-width: 792px) {
+    .container {
+        grid-template-columns: 50px 1fr;
+        gap: 30px;
+        padding: 20px;
+      }
+
+      .hamburger {
+        display: block;
+        padding: 0 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .sidebarL {
+        display: flex;
+        align-items: center;
+      }
+      
+      .sidebarL .logo h1 {
+        font-size: 20px;
+        padding: 10px;
+        display: none;
+      }
+      
+      .sidebarL ul {
+        padding: 20px 20px 20px 10px;
+        gap: 30px;
+        display: none;
+      }
+      
+      
+      /* main  */
+    
+      #question-show {
+        padding: 30px;
+        padding-top: 20px;
+      }
+      
+      
+      #question-show .title-question .close {
+        font-size: 27px;
+      }
+      
+      
+      #question-show .title-question h1{
+        font-size: 22px;
+        padding-bottom: 15px;
+        display: flex;
+        align-items: start;
+        gap: 15px;
+        
+      }
+      
+      #question-show .title-question h1 span{
+        background-color: var(--light-blue);
+      }
+      
+      #question-show .title-question h4 {
+        font-size: 11px;
+      }
+      
+      
+      
+      #question-show  .main-question h3 {
+        font-size: 13px;
+      }
+
+      /* sidebar right */
+
+      .sidebarR {
+        gap: 25px;
+        display: none;
+      }
+      
+      .sidebarR .profile-details{
+        background-color: var(--light-blue-grayish);
+        padding: 16px 18px;
+
+      }
+      
+      .sidebarR .profile-details h1{ 
+        font-size: 10px;
+      }
+      
+      .sidebarR .profile-details h2{ 
+        font-size: 40px;
+        padding-bottom: 7px;
+      }
+      
+      .sidebarR .profile-details p {
+        font-size: 7px;
+      }
+      
+      .sidebarR .profile-details h5 {
+        font-size: 7px;
+      }
+      
+      
+      .sidebarR .trends  {
+        padding: 25px 16px;
+      }
+      
+      
+      .trending-title h1 {
+        font-size: 11px;
+      }
+      
+      
+      .trending-list li {
+        font-size: 10px;
+      }
+      
+      footer {
+        gap: 5px;
+        font-size: 8px;
+      }
+}
+
+@media screen and (max-width: 570px) {
+
+      
+      /* main  */
+    
+      #question-show {
+        padding: 20px;
+        padding-top: 20px;
+      }
+      
+      
+      #question-show .title-question .close {
+        font-size: 22px;
+        padding-left: 50px;
+      }
+      
+      
+      #question-show .title-question h1{
+        font-size: 20px;
+        padding-bottom: 15px;
+        padding-right: 50px;
+        
+      }
+      
+      #question-show .title-question h1 span{
+        background-color: var(--light-blue);
+      }
+      
+      #question-show .title-question h4 {
+        font-size: 11px;
+      }
+      
+      
+      
+      #question-show  .main-question h3 {
+        font-size: 11px;
+      }
+
+      /* sidebar right */
+
+}

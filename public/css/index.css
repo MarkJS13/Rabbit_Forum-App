@@ -1,0 +1,1092 @@
+:root {
+    --dark-blue:  rgb(23,27,58);
+    --light-blue: rgb(100,108,159);
+    --light-blue-grayish: rgb(29,33,71);
+    --btn-blue: rgb(49,58,106);
+    --font: rgb(189, 189, 192);
+  
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Martian Mono', monospace;
+   
+    background-color: var(--dark-blue);
+    color: var(--font);
+
+    
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  a,ul,li,h1,h2,h3,h4,h5, p {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 7.8fr 250px;
+    gap: 50px;
+    padding: 20px 0;
+  }
+
+  .wrapper {
+    display: none;
+  }
+
+  .wrapper-style {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 4, 4, 0.247);
+    z-index: 1;
+  }
+
+
+  .hamburger {
+    display: none;
+  }
+
+  .sidebarToggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35%;
+    background-color: var(--light-blue);
+    padding: 50px;
+    padding-left: 10px;
+    height: 100%;
+    transform: translate(-100%);
+    transition: ease-out .7s;
+    
+  }
+
+  .sidebarToggle .close {
+    position: absolute;
+    font-size: 45px;
+    top: 0;
+    right: 0;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+
+ 
+
+  .sidebarToggle-active {
+    transform: translate(0);
+    transition: ease-out .7s;
+  }
+
+  .sidebarToggle ul{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px 40px 40px 20px;
+  }
+
+  .sidebarToggle ul li {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 17px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .sidebarToggle ul li:hover {
+    color: var(--light-blue-grayish) !important;
+    
+  }
+
+  .sidebarToggle ul li span{
+    width: 20px;
+    height: 16px;
+    font-size: 16px;
+  }
+
+  .sidebarToggle ul li a{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 17px;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--font);
+  }
+
+  .sidebarToggle ul li a:hover {
+    color: var(--light-blue-grayish) !important;
+    
+  }
+
+  .sidebarToggle ul li a span{
+    width: 20px;
+    height: 16px;
+    font-size: 16px;
+  }
+  
+  
+  .sidebarL {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .sidebarL .logo h1 {
+    font-size: 30px;
+    padding: 0 30px 10px 30px;
+  }
+  
+  .sidebarL ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: var(--light-blue-grayish);
+    padding: 40px 40px 40px 20px;
+    border-radius: 0 50px 50px 0;
+    color: var(--light-blue);
+  }
+  
+  .sidebarL ul li, .sidebarL ul li a  {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 17px;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--light-blue);
+  }
+
+  .sidebarL ul li:hover, .sidebarL ul li a:hover {
+    color: var(--font);
+  }
+  
+  .sidebarL ul li span{
+    width: 20px;
+    height: 16px;
+    font-size: 16px;
+  }
+
+  .sidebarL ul li:hover {
+    color: var(--font);
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  main header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  main header .input{
+    flex: 1;
+    position: relative;
+  }
+  
+  .input .search-icon {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--light-blue);
+    font-size: 15px;
+  }
+  
+  main header input {
+    background-color: var(--light-blue-grayish);
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    color: var(--font);
+    padding: 15px;
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  main header input::placeholder {
+    color: var(--light-blue);
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  
+  main header input:focus {
+    outline: none;
+    border: 1px solid var(--light-blue);
+  }
+  
+  main header .createBtn button {
+    background-color: var(--btn-blue);
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    
+  }
+
+  main header .createBtn button a{ 
+    color: var(--font);
+  
+  }
+  
+  main header .light-bulb {
+    background-color: var(--btn-blue);
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  
+  main .question-block {
+    display: grid;
+    grid-template-columns: .5fr 5fr;
+    background-color: var(--light-blue-grayish);
+    padding: 25px 35px;
+    border-radius: 50px;
+    gap: 20px;
+  }
+  
+  main .question-block .questions {
+    grid-column: 2/3;
+  }
+  
+  main .question-block .upvotes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  main .question-block .upvotes h3 span a{
+    font-size: 18px;
+    color: var(--btn-blue);
+  }
+  
+  main .question-block .upvotes h2 {
+    font-size: 18px;
+    
+  }
+  
+  main .question-block .questions {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main .question-block .questions .content {
+    padding: 20px 0;
+  
+  }
+  
+  main .question-block .questions .content p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  main .question-block .questions .qtitle h1 {
+    font-size: 25px;
+  }
+
+  main .question-block .questions .qtitle h1 a {
+    color: var(--font);
+  }
+  
+  main .question-block .questions .question-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    
+  }
+  
+  main .question-block .questions .question-details .user {
+    color: var(--light-blue);
+  }
+  
+  main .question-block .questions .question-details .category {
+    background-color: var(--light-blue);
+    color: var(--font);
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 11px;
+  }
+  
+  main .question-block .questions .question-details .responses {
+    color: var(--light-blue);
+    padding-left: 8px;
+    font-weight: 700;
+  }
+  
+  main .question-block .questions .question-details .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  
+  
+  .sidebarR {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .sidebarR .profile-details{
+    background-color: var(--light-blue-grayish);
+    padding: 20px 25px;
+    border-radius: 50px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebarR .profile-details h1{ 
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  
+  .sidebarR .profile-details h2{ 
+    font-size: 60px;
+    text-align: center;
+  
+  }
+  
+  .sidebarR .profile-details p {
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 8px;
+  }
+  
+  .sidebarR .profile-details h5 {
+    color: var(--light-blue);
+    font-size: 10px;
+  }
+  
+  
+  .sidebarR .trends  {
+    background-color: var(--light-blue-grayish);
+    padding: 30px 20px;
+    padding-bottom: 15px;
+    border-radius: 50px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .trending-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .trending-title h1 {
+    font-size: 16px;
+  }
+  
+  .trending-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .trending-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 13px;
+  }
+  
+  .trending-list li h5 {
+    color: var(--light-blue);
+  }
+
+  .trending-list li p {
+    text-transform: capitalize;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 9px;
+    color: var(--light-blue);
+  }
+  
+  #question-show {
+    padding: 40px;
+    padding-top: 30px;
+    background-color: var(--light-blue-grayish);
+    border-radius: 8px;
+  }
+  
+  #question-show .title-question {
+    padding-bottom: 20px;
+  
+  }
+
+
+  
+  #question-show {
+    position: relative;
+  
+  }
+  
+  #question-show .title-question .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 27px;
+    padding: 30px;
+    padding-top: 20px;
+  }
+
+  #question-show .title-question .close a{
+    color: var(--font);
+  }
+  
+  #question-show .title-question .close .close-link {
+    color: var(--btn-blue);
+  }
+  
+  
+  #question-show .title-question h1{
+    font-size: 23px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    border: 5px;
+    font-weight: 900;
+  }
+
+ 
+  #question-show .title-question h1 span{
+    background-color: var(--light-blue);
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 10px;
+  }
+  
+  
+  
+  #question-show .title-question .category {
+    padding: 5px;
+    background-color: var(--light-blue);
+  }
+  
+  #question-show  .main-question {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  
+  #question-show  .main-question h3 {
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 400;
+  }
+
+  #question-show  .main-question .question_time p{
+    font-size: 9px;
+    color: var(--light-blue);
+  }
+
+
+  .posted-by {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .posted-by h4 {
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    color: var(--light-blue);
+  }
+  
+  .comment-form {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--light-blue);
+  }
+  .comment-form p {
+    font-size: 11px;
+    padding-bottom: 10px;
+  }
+  
+  .comment-form p span {
+    color: var(--light-blue);
+  }
+  
+  .comment-form form textarea{
+    box-sizing: border-box;
+    height: 120px;
+    background-color: var(--light-blue-grayish);
+    color: var(--font);
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  .comment-form form button {
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 14px;
+    background-color: var(--light-blue) ;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--dark-blue);
+  }
+  
+  .comments {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .comments .commenter-section {
+    display: flex;
+    flex-direction: column;
+    gap:11px;
+  }
+  
+  .comments .commenter-section .click-reply{
+    font-size: 15px;
+    color: var(--light-blue);
+    cursor: pointer;
+    padding-bottom: 5px;
+  }
+
+ .reply_likes .like {
+    color: var(--light-blue);
+    padding: 7px 0;
+    font-size: 15px !important;
+    cursor: pointer;
+    font-size: 13px;
+  }
+
+  .reply_likes .like a {
+    color: var(--light-blue);
+  }
+
+  .reply_likes .like span{
+    color: var(--font);
+  }  
+
+
+  .load-replies {
+    font-size: 11px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .load-replies-active {
+    display: block !important;
+  }
+
+  .reply-section-hide {
+    display: none !important;
+  }
+
+  .hide-replies {
+    font-size: 11px;
+    cursor: pointer;
+  }
+  
+  .comments .commenter-section h1{
+    font-size: 11px;
+    color: var(--font);
+    color: rgba(128, 128, 128, 0.767);
+    font-weight: 400;
+  }
+
+  .comments .commenter-section h1 span{
+    font-size: 9px;
+    color: var(--light-blue);
+    font-weight: 400;
+  }
+  
+  .comments .commenter-section p{
+    font-size: 18px;
+    padding: 5px 0;
+  }
+
+  .comments .commenter-section .delete-form {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .comments .commenter-section .delete-form button{
+    border: none;
+    color: var(--light-blue);
+    background-color: var(--light-blue-grayish);
+    font-size: 15px;
+  }
+
+
+  
+  .comments .commenter-section .reply-form{
+    font-size: 12px;
+  }
+  
+  .reply-form {
+    padding: 15px 0;  
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .reply-form p {
+    font-size: 11px !important;
+    padding-bottom: 10px;
+  }
+  
+  .reply-form p span {
+    color: var(--light-blue);
+  }
+  
+  .reply-form form textarea{
+    box-sizing: border-box;
+    height: 80px;
+    background-color: var(--light-blue-grayish);
+    color: var(--font);
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    padding: 10px;
+    resize: none;
+  }
+  
+  .reply-form form button {
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 14px;
+    background-color: var(--light-blue) ;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--dark-blue);
+  }
+  
+  .comments .reply-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-left: 1px solid var(--btn-blue);
+    margin-left: 20px;
+    padding-left: 16px;
+   
+  }
+  
+  .comments .reply-section .replies{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .comments .reply-section .replies .delete-form {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .comments .reply-section .replies .delete-form button{
+    border: none;
+    color: var(--light-blue);
+    background-color: var(--light-blue-grayish);
+    font-size: 15px;
+  }
+  
+  .comments .reply-section .replies h1 {
+    font-size: 11px;
+    color: var(--font);
+    color: rgba(128, 128, 128, 0.767);
+    font-weight: 400;
+  }
+
+  .comments .reply-section .replies h1 span{
+    font-size: 9px;
+    color: var(--light-blue);
+    font-weight: 400;
+  }
+  
+  .comments .reply-section .replies p{
+    font-size: 15px;
+    padding-top: 7px;
+  }
+
+
+    
+  /***********/
+
+
+  .create-question {
+    padding: 40px;
+    padding-top: 30px;
+    background-color: var(--light-blue-grayish);
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .create-question h2 {
+    font-size: 15px;
+    border-bottom: 1px solid var(--btn-blue);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    
+  }
+
+  .create-question h2 .close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 40px;
+    padding-top: 30px;
+  }
+
+  .create-question h2 .close i {
+    color: var(--font);
+    font-size: 20px;
+  }
+
+  .create-question .create-question-form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: var(--dark-blue);
+  }
+
+  .create-question-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .create-question-form form input, .create-question-form form select,  .create-question-form form textarea, .create-question-form form button {
+    background-color: var(--dark-blue);
+    border: 1px solid var(--font);
+    color: var(--font);
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-size: 15px;
+  } 
+
+  .create-question-form form select option {
+    text-transform: capitalize;
+  }
+
+  .create-question-form form input {
+    height: 35px;
+  }
+
+  .create-question-form form textarea {
+    height: 105px;
+    padding-top: 8px;
+  }
+  
+  .create-question-form form label {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .create-question-form form .btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .create-question-form form button {
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: var(--btn-blue);  
+    border: none;
+    font-size: 15px;
+  }
+
+  .create-form-error {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .create-form-error p {
+    color: rgb(236, 47, 47);
+    font-size: 12px;
+  }
+
+  .welcome-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    background-color: var(--light-blue-grayish);
+  }
+  .welcome-page .left {
+    display: flex;
+     flex-direction: column;
+     gap: 25%;
+     padding: 50px;
+     padding-top: 30px;
+  }
+
+  .welcome-page .left .text{
+    display: flex;
+    align-items: center;
+
+    
+  }
+
+  .welcome-page .left .logo {
+    color: rgb(216, 89, 51);
+    font-size: 25px;
+  }
+
+  .welcome-page .left .text h1{
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 500;
+
+  }
+
+  .welcome-page .left .text h1 span {
+    color: rgb(238, 76, 27);
+    font-weight: 900;
+  }
+
+  .welcome-page .right {
+    background-color: var(--font);
+    padding: 50px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+  }
+
+  .welcome-page .right nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+  }
+
+  .welcome-page .right nav li a{
+    font-size: 15px;
+    color: var(--light-blue-grayish);
+  }
+
+  .welcome-page .right .hero {
+    height: 300px;
+    width: 100%;
+ 
+    
+  }
+
+  .welcome-page .right .hero .hero-container {
+    height: 300px;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid var(--font);
+    background: url('/img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  .welcome-page-login {
+    background-color: var(--font);
+    height: 100vh;
+    color: var(--light-blue-grayish);
+  }
+
+  .login-form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .login-form form {
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 35%;
+    background-color: var(--light-blue-grayish);
+    color: var(--font);
+  }
+
+  .login-form form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .login-form form div label {
+    font-size: 12px;
+  }
+
+  .login-form form div input {
+    height: 30px;
+    font-size: 15px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--font);
+  }
+
+  .login-form form div input:focus {
+    border: 1px solid var(--light-blue-grayish);
+    outline: none;
+  }
+
+  .login-form form .remember {
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  .login-form form .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 8px;
+  }
+
+  .login-form form .btn a {
+    color: var(--font);
+    font-size: 9px;
+  }
+
+  .login-form form .btn button {
+    background-color: var(--btn-blue);
+    color: var(--font);
+    border: none;
+    padding: 7px 25px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .login-form .error-msg {
+    position: absolute;
+    bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .login-form .error-msg p {
+    color: red;
+    font-size: 9px;
+  }
+
+
+  .my-question {
+    background-color: var(--light-blue-grayish);
+    padding: 40px;
+    padding-top: 30px;
+    border-radius: 8px;
+  }
+
+  .my-question h1{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-size: 20px;    
+  }
+
+  .my-question table {
+    border-collapse: collapse;
+    border-radius: 15px;
+    background-color: var(--dark-blue);
+  }
+
+  table tr, td, th {
+    border: 1px solid var(--font);
+    width: 100%;
+    padding: 15px;
+  }
+
+  th {
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    border-color: none;
+  }
+
+  td {
+    font-size: 12px;
+    color: var(--light-blue);
+  }
+  
+  td a {
+    color: var(--light-blue);
+    padding: 0;
+  }
+
+  td button {
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+    border: none;
+  }
+
+  .table-title {
+    font-size: 16px;
+  }
+
+  .table-time {
+    font-size: 10px;
+  }
+
+  .emptyq {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    color: var(--light-blue);
+
+  }
+
+  .emptyq h1{
+    font-size: 14px;
+  }
+
+
+  .invalid-route {
+    background-color: var(--font);
+    height: 100vh;
+    color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .invalid-route i{ 
+    font-size: 60px;
+  }
+
+  .invalid-route h1{
+    text-align: center;
+    font-size: 15px;
+  }
