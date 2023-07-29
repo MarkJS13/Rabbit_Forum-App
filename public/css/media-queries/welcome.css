@@ -46,3 +46,59 @@
   
       
   }
+
+
+  @media screen and (max-width: 435px) {
+  
+    .welcome-page .left {
+      padding: 30px;
+      padding-top: 20px;
+    }
+
+    .welcome-page .left .logo {
+      font-size: 18px;
+      
+    }
+  
+    .welcome-page .left .text h1{
+      font-size: 13px;
+  
+    }
+  
+    .welcome-page .right nav{
+      gap: 10px;
+      padding: 25px 30px 0 0;
+    }
+  
+    .welcome-page .right nav li a{
+      font-size: 9px;
+      color: var(--font);
+    }
+  
+    .welcome-page .right .hero {
+      height: 100%;
+      width: 100%;
+   
+      
+    }
+  
+    .welcome-page .right .hero .hero-container {
+      height: 100%;
+    }
+  
+      
+  }
+
+
+  @media screen and (max-width: 315px) {
+
+    .welcome-page .left .logo {
+      padding-top: 40px;
+      
+    }
+
+    .welcome-page .left .logo h1{
+      text-align: center;
+      
+    }
+  }

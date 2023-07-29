@@ -326,166 +326,6 @@
       }
 }
 
-@media screen and (max-width: 970px) {
-    .container {
-        grid-template-columns: 150px 1fr 190px;
-        gap: 20px;
-      }
-      
-      .sidebarL .logo h1 {
-        font-size: 25px;
-      }
-      
-      .sidebarL ul {
-        padding: 20px 20px 20px 10px;
-        gap: 35px;
-      }
-      
-      .sidebarL ul li {
-        gap: 8px;
-        font-size: 10px;
-      }
-      
-      .sidebarL ul li span{
-        font-size: 10px;
-      }
-      /* main  */
-    
-       
-      #question-show {
-        padding: 30px;
-        padding-top: 20px;
-      }
-      
-      #question-show .title-question {
-        padding-bottom: 18px;
-      
-      }
-      
-      #question-show .title-question .close {
-        font-size: 27px;
-        padding: 20px;
-        padding-top: 15px;
-      }
-      
-      #question-show .title-question h1{
-        font-size: 22px;
-        padding-bottom: 7px;
-      }
-      
-      #question-show .title-question h1 span{
-        font-size: 9px;
-      }
-      
-      #question-show .title-question h4 {
-        font-size: 10px;
-      }
-      
-      #question-show  .main-question {
-        padding-bottom: 20px;
-        gap: 5px;
-      }
-      
-      #question-show  .main-question h3 {
-        font-size: 13px;
-      }
-    
-      .comments-count p{
-        font-size: 10px;
-      }
-      
-      .comment-form {
-        padding: 30px 0;
-      }
-      .comment-form p {
-        font-size: 10px;
-        padding-bottom: 8px;
-      }
-          
-      .comment-form form textarea{
-        font-size: 13px;
-      }
-      
-      .comment-form form button {
-        padding: 7px 17px;
-        font-size: 12px;
-      }
-      
-      .comments .commenter-section .click-reply{
-        font-size: 13px;
-      }
-    
-      .comments .commenter-section h1{
-        font-size: 14px;
-        color: var(--light-blue);
-      }
-      
-      .comments .commenter-section p{
-        font-size: 12px;
-      }
-      
-      
-      .reply-form form textarea{
-        height: 70px;
-        font-size: 14px;
-      }
-      
-      .reply-form form button {
-        padding: 7px 17px;
-        font-size: 12px;
-      }
-
-
-      /* sidebar right */
-
-      .sidebarR {
-        gap: 25px;
-      }
-      
-      .sidebarR .profile-details{
-        background-color: var(--light-blue-grayish);
-        padding: 16px 18px;
-
-      }
-      
-      .sidebarR .profile-details h1{ 
-        font-size: 10px;
-      }
-      
-      .sidebarR .profile-details h2{ 
-        font-size: 40px;
-        padding-bottom: 7px;
-      }
-      
-      .sidebarR .profile-details p {
-        font-size: 7px;
-      }
-      
-      .sidebarR .profile-details h5 {
-        font-size: 7px;
-      }
-      
-      
-      .sidebarR .trends  {
-        padding: 25px 16px;
-      }
-      
-      
-      .trending-title h1 {
-        font-size: 11px;
-      }
-      
-      
-      .trending-list li {
-        font-size: 10px;
-      }
-      
-      footer {
-        gap: 5px;
-        font-size: 8px;
-      }
-}
-
 @media screen and (max-width: 857px) {
     .container {
         grid-template-columns: 150px 1fr 190px;
@@ -756,6 +596,10 @@
         gap: 5px;
         font-size: 8px;
       }
+
+      main header { 
+        gap: 10px;
+      }
 }
 
 @media screen and (max-width: 570px) {
@@ -798,4 +642,34 @@
 
       /* sidebar right */
 
+}
+
+@media screen and (max-width: 444px) {
+
+  .container {
+    gap: 10px;
+  }
+
+  main header .createBtn button {
+    width: 80px;
+    padding: 5px 12px;
+  }
+
+  main header .createBtn button a {
+    font-size: 10px;
+  }
+
+  .sidebarToggle ul {
+    gap: 50px;
+  }
+
+  .sidebarToggle ul li {
+    font-size: 12px;
+  }
+
+  .sidebarToggle ul li a{
+    font-size: 12px;
+  }
+
+  
 }

@@ -186,6 +186,9 @@
         gap: 30px;
         padding: 20px;
       }
+      .container {
+        gap: 10px;
+      }
 
       .hamburger {
         display: block;
@@ -272,13 +275,34 @@
         padding: 25px 30px;
       }
 
-      .my-question {
-        padding: 28px;
-      }
 
       .table-title {
         font-size: 11px;
       }
+
+      main header { 
+        gap: 10px;
+      }
+    
+      .my-question h1{
+        font-size: 16px;    
+      }
+    
+    
+      table tr, td, th {
+        padding: 8px;
+      }
+    
+      th {
+        padding: 5px ;
+        font-size: 12px;
+      }
+    
+      td {
+        font-size: 10px;
+        color: var(--light-blue);
+      }
+    
     
       
 }
@@ -303,8 +327,110 @@
     font-size: 14px;
   }
 
+
+  .my-question h1{
+    font-size: 14px;    
+  }
+
+
+  table tr, td, th {
+    padding: 7px;
+  }
+
+  td {
+    font-size: 10px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 444px) {
+
+
+  main header .createBtn button {
+    width: 80px;
+    padding: 5px 12px;
+  }
+
+  main header .createBtn button a {
+    font-size: 10px;
+  }
+
+  .create-question {
+    padding: 20px;
+  }
+
+  .create-question h2{
+    font-size: 12px;
+  }
+
+  .create-question h2 .close {
+    padding-right: 30px;
+    padding-top: 18px;
+  }
+
+
+  .create-question .create-question-form {
+    padding: 15px;
+
+  }
+
+  .create-question-form form input {
+    width: auto;
+    height: 20px;
+    font-size: 8px;
+  }
+  .create-question-form form textarea {
+    height: 80px;
+    font-size: 8px;
+  }
+
+  .create-question-form form label {
+    font-size: 10px;
+  }
+
+  .create-question-form form select {
+    width: 60px;
+    font-size: 10px;
+  }
+
+  .create-question-form form button {
+    width: 45px;
+    font-size: 9px;
+  }
+
   .my-question {
     padding: 17px;
+  }
+
+
+  .sidebarToggle ul {
+    gap: 50px;
+  }
+
+  .sidebarToggle ul li {
+    font-size: 12px;
+  }
+
+  .sidebarToggle ul li a{
+    font-size: 12px;
+  }
+
+  .table-title {
+    font-size: 12px;
+  }
+
+  .table-time {
+    font-size: 6px;
+  }
+
+  th {
+    font-size: 9px;
+  }
+
+  .emptyq h1{
+    font-size: 9px;
   }
 
 }
